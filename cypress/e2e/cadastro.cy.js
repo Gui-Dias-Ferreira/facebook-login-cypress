@@ -9,8 +9,10 @@ describe('Realizar cadastro no twitter',  function() {
   })
  
   it('preencher formulário de cadastro', function () {
+    // jogar esse get pro beforeEach
     cy.get('[data-testid="signupButton"]')
       .click()
+
     cy.get('#modal-header > :nth-child(1) > .css-1qaijid')
       .should('be.visible')
 
